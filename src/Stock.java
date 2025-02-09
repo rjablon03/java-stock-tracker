@@ -1,6 +1,11 @@
 public class Stock {
     private String tickerSymbol;
-    private String closeValue;
+    private float closeValue;
+
+    public Stock(String tickerSymbol, float closeValue) {
+        this.tickerSymbol = tickerSymbol;
+        this.closeValue = closeValue;
+    }
 
     public String getTickerSymbol() {
         return tickerSymbol;
@@ -10,11 +15,11 @@ public class Stock {
         this.tickerSymbol = tickerSymbol;
     }
 
-    public String getCloseValue() {
+    public float getCloseValue() {
         return closeValue;
     }
 
-    public void setCloseValue(String closeValue) {
+    public void setCloseValue(float closeValue) {
         this.closeValue = closeValue;
     }
 }
